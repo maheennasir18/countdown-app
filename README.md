@@ -12,6 +12,36 @@ ng serve
 
 Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
+
+## Mock server
+
+To set up and start a mock server perform following:
+In order to call your own mock server for API call, run:
+
+```bash
+npm install -g json-server
+```
+
+Create a db.json and add mock response in file and run:
+
+```bash
+json-server --watch db.json --port 300
+```
+
+Once the server is running, open your browser and navigate to `http://localhost:3000/`. This will load mock response.
+
+In order to call API from a specific route e.g. /api/deadline, perform following steps:
+
+1. Create a proxy.config.json file 
+2. Update build.configs in angular. json
+3. Run command to start application (Make sure json server is already up and running)
+
+```bash
+ng serve --proxy-config proxy.conf.json
+OR
+npm run startProxy
+```
+
 ## Code scaffolding
 
 Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
