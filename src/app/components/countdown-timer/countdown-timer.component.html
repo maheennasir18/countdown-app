@@ -1,0 +1,6 @@
+<!--Use template defined in html or directly code from this file-->
+<h3>Countdown API call example</h3>
+<div *ngIf="countdownObservable$ | async as countdown">
+    <h2>Seconds left to deadline: {{ countdown }}</h2>
+</div>
+  
