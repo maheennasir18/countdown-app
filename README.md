@@ -25,7 +25,7 @@ npm install -g json-server
 Create a db.json and add mock response in file and run:
 
 ```bash
-json-server --watch db.json --port 300
+json-server --watch db.json --port 3000
 ```
 
 Once the server is running, open your browser and navigate to `http://localhost:3000/`. This will load mock response.
@@ -38,7 +38,10 @@ In order to call API from a specific route e.g. /api/deadline, perform following
 
 ```bash
 ng serve --proxy-config proxy.conf.json
+```
 OR
+
+```bash
 npm run startProxy
 ```
 
